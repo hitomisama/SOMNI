@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import '../index.css';
 
 const menu = [
   { path: "/", cn: "首页", en: "HOME" },
@@ -17,7 +18,7 @@ export default function Header() {
     <header className="header">
       
       <nav className="menu">
-        <img src="/logo.jpg" alt="" />
+        <img src="/logo.jpg" alt="" className="logo"/>
         {menu.map((item, index) => (
           <Link
             to={item.path}
