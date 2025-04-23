@@ -1,12 +1,13 @@
-import Header from '../components/Header.jsx'
+import React, { useEffect, useState, useRef } from "react";
+import { Routes, Route } from "react-router-dom";
 
 
 
 function Top() {
     
-    return(
-        <Header />
-    )
+return(
+    <div className="ttl">TECHNOLOGY ART MEDIA</div>
+)
 }
 
 export default Top

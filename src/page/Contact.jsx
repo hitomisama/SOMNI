@@ -5,9 +5,6 @@ import Header from '../components/Header.jsx'
 function Contact() {
     
 
-    return(
-        <Header />
-    )
 }
 
 export default Contact

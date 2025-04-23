@@ -5,9 +5,7 @@ import Header from '../components/Header.jsx'
 function Services() {
     
 
-    return(
-        <Header />
-    )
+
 }
 
 export default Services

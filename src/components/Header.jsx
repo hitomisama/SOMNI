@@ -16,22 +16,28 @@ export default function Header() {
 
   return (
     <header className="header">
-      
       <nav className="menu">
-        <img src="/logo.jpg" alt="" className="logo"/>
-        {menu.map((item, index) => (
-          <Link
-            to={item.path}
-            key={index}
-            className={`menu-item ${location.pathname === item.path ? "active" : ""}`}
-          >
-        
-            <span className="menu-cn">{item.cn}</span>
-            <span className="menu-en">{item.en}</span>
-          </Link>
-        ))}
+        {/* logo */}
+        <Link to="/">
+          <img src="/logo.jpg" alt="logo" className="logo" />
+        </Link>
+
+        {/* 菜单 */}
+        <div className="menu-links">
+          {menu.map((item, index) => (
+            <Link
+              to={item.path}
+              key={index}
+              className={`menu-item ${
+                location.pathname === item.path ? "active" : ""
+              }`}
+            >
+              <span className="menu-cn">{item.cn}</span>
+              <span className="menu-en">{item.en}</span>
+            </Link>
+          ))}
+        </div>
       </nav>
     </header>
-    
   );
 }

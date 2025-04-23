@@ -1,29 +1,32 @@
+/* 页面背景 */
 body {
   background-color: black;
   margin: 0;
   padding: 0;
 }
 
-/* 导航栏容器 */
+/* 顶部导航栏 */
 .menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* logo */
+/* logo 图片 */
 .logo {
   height: 40px;
 }
 
-/* 菜单区 */
+/* 菜单容器 */
 .menu-links {
   display: flex;
   gap: 40px;
 }
 
-/* 菜单项 */
+/* 单个菜单项 */
 .menu-item {
   display: flex;
   flex-direction: column;
@@ -37,18 +40,34 @@ body {
   opacity: 0.7;
 }
 
+/* 中文菜单文字 */
 .menu-cn {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 16px;
+  /* font-weight: bold; */
 }
 
+/* 英文菜单文字 */
 .menu-en {
-  font-size: 10px;
+  font-size: 8px;
   margin-top: 2px;
   letter-spacing: 1px;
 }
 
 /* 当前页面高亮 */
 .menu-item.active {
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
+}
+
+.menu-item.active .menu-cn {
+  font-size: 19px; /* 原本是 16px + 3 */
+}
+
+.menu-item.active .menu-en {
+  font-size: 11px; /* 原本是 8px + 3 */
+}
+
+/* 首页样式 */
+.ttl{
+  color: white;
+  font-size: ;
 }
