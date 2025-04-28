@@ -1,8 +1,6 @@
 /* 页面背景 */
 body {
   background-color: black;
-  margin: 0;
-  padding: 0;
 }
 
 /* 顶部导航栏 */
@@ -10,9 +8,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 60px;
-  max-width: 1200px;
-  margin: 0 auto;
+  z-index: 3;
+  padding: 20px 20px;
+  /* position: absolute; */
+  /* width: 100vw; */
+  /* margin: 20px ; */
 }
 
 /* logo 图片 */
@@ -23,7 +23,7 @@ body {
 /* 菜单容器 */
 .menu-links {
   display: flex;
-  gap: 40px;
+  gap: 100px;
 }
 
 /* 单个菜单项 */
@@ -59,15 +59,16 @@ body {
 }
 
 .menu-item.active .menu-cn {
-  font-size: 19px; /* 原本是 16px + 3 */
+  font-size: 19px;
+  /* 原本是 16px + 3 */
 }
 
 .menu-item.active .menu-en {
-  font-size: 11px; /* 原本是 8px + 3 */
+  font-size: 11px;
+  /* 原本是 8px + 3 */
 }
 
 /* 首页样式 */
-.ttl{
+.ttl {
   color: white;
-  font-size: ;
 }

@@ -1,0 +1,22 @@
+.video-wrapper {
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: right;
+}
+
+.video-element {
+  width: 110%;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.video-title {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.video-description {
+  font-size: 14px;
+  color: #ccc;
+}
