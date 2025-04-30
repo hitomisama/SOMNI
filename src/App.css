@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'HelveticaCE55';
+  src: url('./assets/fonts/HelveticaCE55Roman.ttf') format('truetype');
+}
+
 /* 页面背景 */
 body {
   background-color: black;
@@ -9,10 +14,8 @@ body {
   align-items: center;
   justify-content: space-between;
   z-index: 3;
-  padding: 20px 20px;
-  /* position: absolute; */
-  /* width: 100vw; */
-  /* margin: 20px ; */
+  padding: 20px 50px 20px 40px;
+
 }
 
 /* logo 图片 */
@@ -53,6 +56,8 @@ body {
   letter-spacing: 1px;
 }
 
+g
+
 /* 当前页面高亮 */
 .menu-item.active {
   border-bottom: 1px solid white;
@@ -69,6 +74,81 @@ body {
 }
 
 /* 首页样式 */
-.ttl {
+/* .ttl {
   color: white;
+  font-family: 'HelveticaCE55', bold;
+  font-size: 300px;
+  font-weight: 700;
+  line-height: 288.9px;
+  letter-spacing: 30px;
+  position: relative;
+  white-space: nowrap;
+} */
+
+.video-element {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  width: 75%;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.mv {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.scrolling-text-wrapper {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  z-index: 2;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  mix-blend-mode: screen;
+}
+
+/* 隐藏 Webkit 浏览器滚动条 */
+.scrolling-text-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.ttl.scrolling-text {
+  display: inline-block;
+  font-size: 300px;
+  font-weight: 700;
+  line-height: 288.9px;
+  letter-spacing: 30px;
+  color: white;
+  animation: scroll-text 20s linear infinite;
+  mix-blend-mode: screen;
+  z-index: 2;
+}
+
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 300px;
+  font-weight: 700;
+  letter-spacing: 30px;
+  color: white;
+  mix-blend-mode: screen;
+  -webkit-text-stroke: 1px white;
+  top: 20%;
 }

@@ -1,0 +1,62 @@
+.video-text-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* 滚动文本容器 */
+.scrolling-text-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: none; /* Firefox 隐藏滚动条 */
+  -ms-overflow-style: none; /* IE/Edge 隐藏滚动条 */
+}
+
+/* 隐藏滚动条 */
+.scrolling-text-container::-webkit-scrollbar {
+  display: none;
+}
+
+.text-content {
+  display: inline-block;
+  padding: 20px 0;
+}
+
+/* 滚动文本样式 */
+.scrolling-text {
+  font-size: 48px;
+  font-weight: bold;
+  white-space: nowrap;
+  color: #fff; /* 默认颜色 */
+  text-shadow: 0px 0px 1px rgba(0,0,0,0.5);
+  mix-blend-mode: difference; /* 这会使文字在重叠区域产生反色效果 */
+}
+
+/* 视频播放器样式 */
+.video-player {
+  width: 100%;
+  z-index: 5;
+  display: block;
+}
+
+/* 标题样式增强 */
+.ttl {
+  letter-spacing: 2px;
+  -webkit-text-stroke: 1px #fff; /* 文字描边 */
+}
+
+.scrolling-text {
+  font-size: 48px;
+  font-weight: bold;
+  white-space: nowrap;
+  color: #fff; /* 默认颜色 */
+  -webkit-text-stroke: 1px #fff; /* 文字描边 */
+  mix-blend-mode: difference; /* 重叠效果 */
+  padding: 0 20px;
+}
